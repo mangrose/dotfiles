@@ -9,8 +9,6 @@ tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
-tap "puma/puma"
-tap "stripe/stripe-cli"
 tap "universal-ctags/universal-ctags"
 
 # Homebrew
@@ -45,6 +43,7 @@ brew "git"
 brew "git-quick-stats"
 brew "gmp" # Vim dependency
 brew "gnupg" # asdf-nodejs dependency
+brew "go"
 brew "highlight"
 brew "htop"
 brew "httpie"
@@ -69,7 +68,6 @@ brew "pandoc"
 brew "perl"
 brew "pgcli"
 brew "postgresql", restart_service: true
-brew "puma/puma/puma-dev"
 brew "python"
 brew "ranger"
 brew "readline"
@@ -81,7 +79,6 @@ brew "shellcheck"
 brew "sqlite"
 brew "ssh-copy-id"
 brew "starship"
-brew "stripe/stripe-cli/stripe"
 brew "the_silver_searcher"
 brew "tldr"
 brew "tmux"
@@ -96,17 +93,7 @@ brew "zsh"
 
 # homebrew-cask
 # https://github.com/caskroom/homebrew-cask
-cask "1password"
-cask "alacritty"
-cask "alfred"
-cask "arq"
-cask "bartender"
 cask "brave-browser"
-cask "carbon-copy-cloner"
-cask "cleanmymac"
-cask "daisydisk"
-cask "dash"
-cask "discord"
 cask "dropbox"
 cask "firefox"
 cask "font-caskaydia-cove-nerd-font"
@@ -116,42 +103,21 @@ cask "font-jetbrains-mono-nerd-font"
 cask "font-victor-mono-nerd-font"
 cask "google-chrome"
 cask "handbrake"
-cask "hazel"
-cask "istat-menus"
-cask "iterm2-beta"
 cask "messenger"
 cask "micro-snitch"
 cask "microsoft-edge"
-cask "microsoft-excel"
-cask "microsoft-word"
 cask "ngrok"
-cask "opera"
 cask "pdftotext"
 cask "pgadmin4"
 cask "postico"
 cask "postman"
-cask "screenflick"
 cask "skype"
 cask "slack"
 cask "tableplus"
-cask "telegram"
 cask "toggl-track"
+cask "docker"
+cask "google-backup-and-sync"
 cask "vmware-fusion"
-cask "whatsapp"
-
-# rubocop:disable Style/NumericLiterals
-mas "Keynote", id: 409183694
-mas "Magnet", id: 441258766
-mas "Marked 2", id: 890031187
-mas "Numbers", id: 409203825
-mas "OmniGraffle", id: 1142578753
-mas "Pages", id: 409201541
-mas "Pixelmator Pro", id: 1289583905
-mas "Things 3", id: 904280696
-mas "ToothFairy", id: 1191449274
-mas "WiFi Explorer", id: 494803304
-mas "e-Sword", id: 968437868
-mas "iNet Network Scanner", id: 403304796
-# rubocop:enable Style/NumericLiterals
-
+cask "lastpass"
+cask "robo-3t"
 # vim: set filetype=ruby:
