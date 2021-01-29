@@ -124,6 +124,9 @@ cask "vmware-fusion"
 cask "lastpass"
 cask "robo-3t"
 cask "visual-studio-code"
-cask "visual-studio-code"
+cask "visual-studio"
+cask "poedit"
+cask "spotify"
+cask "slack"
 
 # vim: set filetype=ruby:
