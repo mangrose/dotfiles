@@ -67,6 +67,9 @@ brew "overmind"
 brew "pandoc"
 brew "perl"
 brew "pgcli"
+brew "php@7.4"
+brew "php"
+brew "brew-php-switcher"
 brew "postgresql", restart_service: true
 brew "python"
 brew "ranger"
@@ -120,4 +123,7 @@ cask "google-backup-and-sync"
 cask "vmware-fusion"
 cask "lastpass"
 cask "robo-3t"
+cask "visual-studio-code"
+cask "visual-studio-code"
+
 # vim: set filetype=ruby:
