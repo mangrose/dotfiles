@@ -165,49 +165,6 @@ for item in "${config_files[@]}"; do
   ln -nfs "${DOTFILES}/machines/${HOST_NAME}/${item}" "${XDG_CONFIG_HOME}/$item"
 done
 
-dotfiles_echo "-> Linking Fish config directories..."
-for item in "${fish_dirs[@]}"; do
-  if [ -d "${FISH_DIR}/${item}" ]; then
-    dotfiles_echo "Directory ${item} exists."
-    if [ -L "${FISH_DIR}/${item}" ]; then
-      dotfiles_echo "Symbolic link detected. Removing..."
-      rm -v "${FISH_DIR}/${item}"
-    else
-      dotfiles_echo "Backing up..."
-      dotfiles_backup "${FISH_DIR}/${item}"
-    fi
-  fi
-  dotfiles_echo "-> Linking ${DOTFILES}/fish/${item} to ${FISH_DIR}/${item}..."
-  ln -nfs "${DOTFILES}/fish/${item}" "${FISH_DIR}/${item}"
-done
-
-dotfiles_echo "-> Linking Fish config files..."
-for item in "${fish_files[@]}"; do
-  if [ -e "${FISH_DIR}/${item}" ]; then
-    dotfiles_echo "${item} exists."
-    if [ -L "${FISH_DIR}/${item}" ]; then
-      dotfiles_echo "Symbolic link detected. Removing..."
-      rm -v "${FISH_DIR}/${item}"
-    else
-      dotfiles_echo "Backing up..."
-      dotfiles_backup "${FISH_DIR}/${item}"
-    fi
-  fi
-  dotfiles_echo "-> Linking ${DOTFILES}/fish/${item} to ${FISH_DIR}/${item}..."
-  ln -nfs "${DOTFILES}/fish/${item}" "${FISH_DIR}/${item}"
-done
-
-dotfiles_echo "-> Installing vim-plug plugins..."
-nvim --headless +PlugInstall +qall
-
-dotfiles_echo "-> Initializing fish_user_paths..."
-command fish -c "set -U fish_user_paths $HOME/bin $HOME/.yarn/bin /usr/local/bin /usr/local/sbin"
-
-dotfiles_echo "-> Installing custom terminfo entries..."
-tic -x "${DOTFILES}/terminfo/tmux-256color.terminfo"
-tic -x "${DOTFILES}/terminfo/xterm-256color-italic.terminfo"
-sudo tic -xe alacritty,alacritty-direct "${DOTFILES}/terminfo/alacritty.info"
-
 dotfiles_echo "Dotfiles installation complete!"
 
 dotfiles_echo "Post-install recommendations:"
