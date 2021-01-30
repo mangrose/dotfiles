@@ -1,0 +1,4 @@
+if [ -f ~/tulo.env ]; then
+    echo "Sourcing Tulo environment from ~/tulo.env"
+    source ~/tulo.env
+fi

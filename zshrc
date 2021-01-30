@@ -22,7 +22,6 @@ export HOST_NAME
 . $DOTFILES/zsh/opts
 . $DOTFILES/zsh/aliases
 . $DOTFILES/zsh/prompt
-. $DOTFILES/zsh/tmux
 . $DOTFILES/zsh/functions
 . $DOTFILES/zsh/z.sh
 . $DOTFILES/zsh/ranger.sh
@@ -67,3 +66,6 @@ export KEYTIMEOUT=1
 . $HOME/dotfiles/zsh/profiler.stop
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Tulo environment
+. $HOME/dotfiles/tulo/loadenv
