@@ -10,6 +10,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "universal-ctags/universal-ctags"
+tap "mongodb/brew"
 
 # Homebrew
 # https://github.com/Homebrew/brew/
@@ -57,7 +58,7 @@ brew "libyaml" # asdf dependency
 brew "mas"
 brew "media-info"
 brew "memcached"
-brew "mongodb"
+brew "mongodb-community"
 brew "most"
 brew "multitail"
 brew "neofetch"
