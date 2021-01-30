@@ -169,4 +169,3 @@ dotfiles_echo "Dotfiles installation complete!"
 
 dotfiles_echo "Post-install recommendations:"
 dotfiles_echo "- Complete Brew Bundle installation with 'brew bundle install'"
-dotfiles_echo "- After launching Neovim, run :checkhealth and resolve any errors/warnings."
