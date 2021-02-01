@@ -81,7 +81,6 @@ home_files=(
 )
 
 config_dirs=(
-"nvim"
 "pry"
 "ranger"
 )

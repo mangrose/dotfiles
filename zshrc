@@ -2,7 +2,7 @@
 . $HOME/dotfiles/zsh/profiler.start
 
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.yarn/bin
-export EDITOR="nvim"
+export EDITOR="vim"
 export BUNDLER_EDITOR=$EDITOR
 export MANPAGER="less -X" # Don’t clear the screen after quitting a manual page
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
