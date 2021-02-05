@@ -11,6 +11,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "universal-ctags/universal-ctags"
 tap "mongodb/brew"
+tap "heroku/brew"
 
 # Homebrew
 # https://github.com/Homebrew/brew/
@@ -44,6 +45,7 @@ brew "git-quick-stats"
 brew "gmp" # Vim dependency
 brew "gnupg" # asdf-nodejs dependency
 brew "go"
+brew "heroku"
 brew "highlight"
 brew "htop"
 brew "httpie"
