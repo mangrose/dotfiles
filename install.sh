@@ -55,7 +55,7 @@ fi
 
 # Also make sure we have Node, needed by Yarn.
 #dotfiles_echo "Adding asdf (Node/Ruby) to PATH..."
-#export PATH="$HOME/.asdf/shims:$HOME/.asdf/bin:$PATH"
+export PATH="$HOME/.asdf/shims:$HOME/.asdf/bin:$PATH"
 
 dotfiles_echo "Checking PATH..."
 echo "$PATH"
