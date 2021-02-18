@@ -34,8 +34,8 @@ HISTFILE=~/.zsh_history
 HIST_STAMPS="yyyy-mm-dd"
 
 # asdf
-#. $HOME/.asdf/asdf.sh
-#. $HOME/.asdf/completions/asdf.bash
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
 
 # Use vi mode
 bindkey -v
