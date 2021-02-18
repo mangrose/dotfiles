@@ -194,4 +194,4 @@ alias ygs='yarn generate && cd dist && http-server -p 8080'
 alias yba='yarn build --analyze'
 
 # Docker
-start-dynamo="cd $HOME/Projects/Wot/DynamoDB;docker-compose up"
+alias start-dynamo="cd $HOME/Projects/Wot/DynamoDB;docker-compose up"
